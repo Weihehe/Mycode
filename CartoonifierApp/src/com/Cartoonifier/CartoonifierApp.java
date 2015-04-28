@@ -29,7 +29,7 @@ public class CartoonifierApp extends Activity implements OnTouchListener {
     private MenuItem mMenuAlien;
     private MenuItem mMenuEvil;
     private MenuItem mMenuDebug;
-
+ 
     public CartoonifierApp() {
         Log.i(TAG, "Instantiated new " + this.getClass());
     }
@@ -58,7 +58,7 @@ public class CartoonifierApp extends Activity implements OnTouchListener {
             ad.show();
         }
     }
-
+  
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
