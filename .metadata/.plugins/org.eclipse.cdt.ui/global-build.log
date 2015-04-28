@@ -1,0 +1,27 @@
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****

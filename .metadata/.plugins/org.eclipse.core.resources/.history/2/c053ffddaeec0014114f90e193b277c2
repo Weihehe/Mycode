@@ -1,0 +1,14 @@
+package com.Cartoonifier;
+
+import android.content.Context;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+
+public abstract class CartoonifierViewBase extends SurfaceView implements SurfaceHolder.Callback, Runnable {
+
+	public CartoonifierViewBase(Context context) {
+		super(context); 
+		// TODO Auto-generated constructor stub
+	}
+
+}

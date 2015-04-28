@@ -1,0 +1,24 @@
+package com.Cartoonifier;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+
+public class CartoonifierView {
+	
+	
+	private boolean bSaveThisFrame = false;
+	private boolean bFreezeOutput = false;
+	private static final int FREEZE_OUTPUT_MSECS = 3000;
+	public CartoonifierView(Context context) {
+        
+    }
+
+	protected void nextFrameShouldBeSaved(Context baseContext) {
+		// TODO Auto-generated method stub
+		bSaveThisFrame = true;
+	}
+	protected Bitmap processFrame(byte[]data) {
+		int[] rgba = mRGBA;
+		
+	}
+}

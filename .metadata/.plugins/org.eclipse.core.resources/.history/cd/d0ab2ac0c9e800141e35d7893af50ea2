@@ -1,0 +1,8 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := jin_part
+LOCAL_SRC_FILES := jin_part.cpp
+
+include $(BUILD_SHARED_LIBRARY)

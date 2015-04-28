@@ -1,0 +1,9 @@
+package com.Cartoonifier;
+
+import android.content.Context;
+
+public class CartoonifierView {
+	public CartoonifierView(Context context) {
+        super(context);
+    }
+}

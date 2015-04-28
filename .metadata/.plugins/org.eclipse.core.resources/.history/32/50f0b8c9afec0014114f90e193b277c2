@@ -1,0 +1,41 @@
+package com.Cartoonifier;
+
+import android.content.Context;
+import android.hardware.Camera;
+
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+
+public abstract class CartoonifierViewBase extends SurfaceView implements SurfaceHolder.Callback, Runnable {
+
+	private static final String TAG = "Cartoonifier::SurfaceView";
+	
+	private Camera mCamera;
+	private SurfaceHolder mHolder;
+	private int mFrameWidth;
+	private int mFrameHeight;
+	private byte[] mFrame;
+	private boolean mThreadRun;
+	private byte[] mBuffer;
+	
+	//相机已经初始化好
+	private boolean mCameraIsInitialized = false;
+	
+	public CartoonifierViewBase(Context context) {
+		super(context); 
+		// 通过SurfaceView获得SurfaceHolder对象  
+		mHolder = getHolder();
+		// 为holder添加回调结构SurfaceHolder.Callback  
+		mHolder.addCallback(this);
+		// TODO Auto-generated constructor stub
+	}
+	public int getFrameWidth()
+	{
+		return mFrameWidth;
+	}
+	public int getFrameHeight()
+	{
+		return mFrameHeight;	
+	}
+
+}

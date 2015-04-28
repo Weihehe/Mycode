@@ -1,0 +1,14 @@
+ddms.logcat.auotmonitor.level=error
+ddms.logcat.automonitor.userprompt=true
+devicePanel.Col0=125
+devicePanel.Col1=53
+devicePanel.Col4=76
+eclipse.preferences.version=1
+logcat.view.colsize.Application=138
+logcat.view.colsize.Level=30
+logcat.view.colsize.PID=58
+logcat.view.colsize.TID=77
+logcat.view.colsize.Tag=93
+logcat.view.colsize.Text=613
+logcat.view.colsize.Time=150
+logcat.view.filters.list=name\: 'CartoonifierApp', tag\: 'CartoonifierApp', text\: '', pid\: '', app\: '', level\: 'verbose', name\: 'CartoonifierView', tag\: 'CartoonifierView', text\: '', pid\: '', app\: '', level\: 'verbose', name\: 'Cartoonifier\:\:SurfaceView', tag\: 'Cartoonifier\:\:SurfaceView', text\: '', pid\: '', app\: '', level\: 'verbose', 
