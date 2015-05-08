@@ -3,9 +3,11 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/features2d/features2d.hpp>
 
-#include "cartoon.h"
-#include "ImageUtils.h"
+#include "cartoons.h"
+//#include "ImageUtils.h" // Handy functions for debugging OpenCV images, by Shervin Emami.
 
+
+using namespace std;
 using namespace cv;
 extern "C" {
 
@@ -30,8 +32,9 @@ JNIEXPORT void JNICALL Java_com_Cartoonifier_CartoonifierView_ShowPreview(JNIEnv
 	env->ReleaseByteArrayElements(yuv,_yuv,0);
 }
 JNIEXPORT void
-JNICALL Java_com_Cartoonifier_CartoonifierView_CartoonifyImage(
-		JNIEnv* env, jobject,jint width, jint height, jbyteArray yuv, jintArray bgra)
+JNICALL Java_com_Cartoonifier_CartoonifierView_CartoonifyImage(JNIEnv* env, jobject,
+        jint width, jint height, jbyteArray yuv, jintArray bgra,
+        jboolean sketchMode, jboolean alienMode, jboolean evilMode, jboolean drawFace)
 {
 		jbyte* _yuv = env->GetByteArrayElements(yuv,0);
 		jint *_bgra = env->GetIntArrayElements(bgra,0);
@@ -45,9 +48,24 @@ JNICALL Java_com_Cartoonifier_CartoonifierView_CartoonifyImage(
 		Mat displayedFrame(mbgr.size(),CV_8UC3);
 
 		//´¦ÀíBGAµÄÍ¼Æ¬ÏñËØ
-		displayedFrame  = mbgr;
+	//	displayedFrame  = mbgr;
 
+
+		if(drawFace)
+		{
+			displayedFrame  = mbgr;
+			drawFaceStickFigureOut(displayedFrame);
+		}
+		else
+		{
+			cartoonifyImage(mbgr, displayedFrame, sketchMode, alienMode, evilMode);
+			if(alienMode)
+				drawFaceStickFigureOut(displayedFrame);
+		}
 		cvtColor(displayedFrame,mbgra,CV_BGR2BGRA);
+
+
+
 
 		env->ReleaseIntArrayElements(bgra,_bgra,0);
 		env->ReleaseByteArrayElements(yuv,_yuv,0);

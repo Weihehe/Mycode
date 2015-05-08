@@ -1,6 +1,6 @@
 #include "cartoons.h"
 
-void cartoonifyImage(Mat srcColor, Mat dst,bool sketchMode, bool evilMode, bool alienMode)
+void cartoonifyImage(Mat srcColor, Mat dst,bool sketchMode, bool alienMode , bool  evilMode)
 {
 	Mat gray;
 	Mat edges;

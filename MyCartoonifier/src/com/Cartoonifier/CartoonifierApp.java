@@ -1,23 +1,52 @@
 package com.Cartoonifier;
 
 import android.app.Activity;
-
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.Window;
+import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.MotionEvent;
 
 
 public class CartoonifierApp extends Activity implements OnTouchListener{
-
+	
+	 private static final String TAG = "CartoonifierApp";
 	 private CartoonifierView mView;
 
+	 public CartoonifierApp() {
+	        Log.i(TAG, "Instantiated new " + this.getClass());
+	    }
+	 protected void onPause() {
+	        Log.i(TAG, "onPause");
+	        super.onPause();
+	        mView.releaseCamera();
+	 }
+	    protected void onResume() {
+	        Log.i(TAG, "onResume");
+	        super.onResume();
+	        if( !mView.openCamera() ) {
+	            AlertDialog ad = new AlertDialog.Builder(this).create();  
+	            ad.setCancelable(false); // This blocks the 'BACK' button  
+	            ad.setMessage("Fatal error: can't open camera!");  
+	            ad.setButton("OK", new DialogInterface.OnClickListener() {  
+	                public void onClick(DialogInterface dialog, int which) {  
+	                    dialog.dismiss();                      
+	                    finish();
+	                }  
+	            });  
+	            ad.show();
+	        }
+	    }
+	 
 	 public void onCreate(Bundle savedInstanceState) {
 
 	        super.onCreate(savedInstanceState);
-
+	        requestWindowFeature(Window.FEATURE_NO_TITLE);
 	        mView = new CartoonifierView(this);
 	        setContentView(mView);
 

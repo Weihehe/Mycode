@@ -3,6 +3,8 @@ package com.Cartoonifier;
 import java.io.IOException;
 import java.util.List;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.graphics.ImageFormat;
 import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
@@ -62,6 +64,16 @@ public abstract class CartoonifierViewBase extends SurfaceView implements Surfac
 			Log.e(TAG, "Can't open camera!");
 			return false;
 		}
+		
+		
+		//1，这个接口调用前，我们需要提前分配一块buffer，并且这个接口调用一定要放在onPreviewFrame()回调中：
+		//2，在调用Camera.startPreview()接口前，我们需要setPreviewCallbackWithBuffer，
+		//而setPreviewCallbackWithBuffer之前我们需要重新addCallbackBuffer，
+		//因为setPreviewCallbackWithBuffer 使用时需要指定一个字节数组作为缓冲区，用于预览图像数据 
+		//即addCallbackBuffer，然后你在onPerviewFrame中的data才会有值；
+		//3，从上面看来，我们设置addCallbackBuffer的地方有两个，一个是在startPreview之前，
+		//一个是在onPreviewFrame中，这两个都需要调用，如果在onPreviewFrame中不调用，
+		//那么，就无法继续回调到onPreviewFrame中了。
 		mCamera.setPreviewCallbackWithBuffer(new PreviewCallback() {
 			
 			@Override
@@ -119,7 +131,7 @@ public abstract class CartoonifierViewBase extends SurfaceView implements Surfac
 							minDiff = Math.abs(size.height-height);
 						}
 					}
-					
+
 				
 				//设置摄像机的长宽
 				params.setPreviewSize(getFrameWidth(), getFrameHeight());
@@ -150,13 +162,75 @@ public abstract class CartoonifierViewBase extends SurfaceView implements Surfac
 					Log.e(TAG, "mCamera.setPreviewDisplay/setPreviewTexture fails: " + e);
 				}
 				
+				//通知预览图像的大小
+				onPreviewStarted(params.getPreviewSize().width, params.getPreviewSize().height);
 				
-				
+				mCamera.startPreview();
 			}
 		}
 	}
+	//在surface的大小发生改变时激发
+	public void surfaceChanged(SurfaceHolder _holder,int format,int width,int height)
+	{
+		Log.i(TAG, "surfaceChanged(). Window size: " + width + "x" + height);
+		setupCamera(width, height);
+	}
 	
+	 //在创建时激发，一般在这里调用画图的线程。
+	public void surfaceCreated(SurfaceHolder holder)
+	{
+		Log.i(TAG, "surfaceCreated");
+		(new Thread(this)).start();
+	}
+	//销毁时激发，一般在这里将画图的线程停止、释放。
+	public void surfaceDestroyed(SurfaceHolder holder)
+	{
+		Log.i(TAG, "surfaceDestroyed");
+		releaseCamera();
+	}
+	//图片的处理函数。由子函数处理
+	protected abstract Bitmap processFrame(byte[] data);
+	//预览窗口开启时的函数
 	protected abstract void onPreviewStarted(int previewWidtd, int previewHeight);
-	
+	//预览窗口结束时的函数
 	protected abstract void onPreviewStopped();
+	
+	//线程的运行
+	public void run()
+	{
+		mThreadRun = true;
+		Log.i(TAG, "Starting processing thread");
+		try
+		{
+			//如果摄像机没有准备好就等待
+			while(mThreadRun && !mCameraIsInitialized)
+			{
+				synchronized (this) {
+					wait(100);
+				}
+			}
+		}catch(InterruptedException e)
+		{
+			e.printStackTrace();
+		}
+		
+		while(mThreadRun)
+		{
+			Bitmap bmp = null;
+			synchronized (this) {
+				//处理摄像头的图片
+				bmp = processFrame(mFrame);
+			}
+			
+			if(bmp!=null)
+			{
+				Canvas canvas = mHolder.lockCanvas();
+				if(canvas != null)
+				{
+					canvas.drawBitmap(bmp, (canvas.getWidth()-getFrameWidth())/2, (canvas.getHeight()-getFrameHeight())/2,null);
+					mHolder.unlockCanvasAndPost(canvas);
+				}
+			}
+		}
+	}
 }

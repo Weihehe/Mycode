@@ -25,3 +25,796 @@ compilation terminated.
 make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
 
 **** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:5:39: fatal error: opencv2/imgproc/imgproc.hpp: No such file or directory
+ #include <opencv2/imgproc/imgproc.hpp>
+                                       ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+In file included from jni/jin_part.cpp:6:0:
+jni/../../Cartoonifier_Desktop/cartoon.h:17:20: fatal error: iostream: No such file or directory
+ #include <iostream>
+                    ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi] Compile++ thumb: jin_part <= cartoon.cpp
+In file included from jni/../../Cartoonifier_Desktop/cartoon.cpp:13:0:
+jni/../../Cartoonifier_Desktop/cartoon.h:17:20: fatal error: iostream: No such file or directory
+ #include <iostream>
+                    ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/__/__/Cartoonifier_Desktop/cartoon.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi-v7a/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi-v7a/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:13:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi-v7a/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:2:33: fatal error: opencv2/core/core.hpp: No such file or directory
+ #include <opencv2/core/core.hpp>
+                                 ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi-v7a/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+jni/jin_part.cpp:6:21: fatal error: cartoon.h: No such file or directory
+ #include "cartoon.h"
+                     ^
+compilation terminated.
+make.exe: *** [obj/local/armeabi-v7a/objs/jin_part/jin_part.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:353: error: undefined reference to 'cv::Mat::create(int, int const*, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:367: error: undefined reference to 'cv::Mat::deallocate()'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:278: error: undefined reference to 'cv::fastFree(void*)'
+jni/jin_part.cpp:28: error: undefined reference to 'cv::_InputArray::_InputArray(cv::Mat const&)'
+jni/jin_part.cpp:28: error: undefined reference to 'cv::_OutputArray::_OutputArray(cv::Mat&)'
+jni/jin_part.cpp:28: error: undefined reference to 'cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+jni/jin_part.cpp:45: error: undefined reference to 'cv::_InputArray::_InputArray(cv::Mat const&)'
+jni/jin_part.cpp:45: error: undefined reference to 'cv::_OutputArray::_OutputArray(cv::Mat&)'
+jni/jin_part.cpp:45: error: undefined reference to 'cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:298: error: undefined reference to 'cv::Mat::copySize(cv::Mat const&)'
+jni/jin_part.cpp:52: error: undefined reference to 'cv::_InputArray::_InputArray(cv::Mat const&)'
+jni/jin_part.cpp:52: error: undefined reference to 'cv::_OutputArray::_OutputArray(cv::Mat&)'
+jni/jin_part.cpp:52: error: undefined reference to 'cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:353: error: undefined reference to 'cv::Mat::create(int, int const*, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:125: error: undefined reference to 'cv::Mat::copySize(cv::Mat const&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:97: error: undefined reference to 'cv::_InputArray::_InputArray(cv::Mat const&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:97: error: undefined reference to 'cv::_OutputArray::_OutputArray(cv::Mat&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:97: error: undefined reference to 'cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:104: error: undefined reference to 'cv::Mat::zeros(int, int, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:380: error: undefined reference to 'cv::Mat::Mat(cv::Mat const&, cv::Rect_<int> const&)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:298: error: undefined reference to 'cv::Mat::copySize(cv::Mat const&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:106: error: undefined reference to 'cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:108: error: undefined reference to 'cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:113: error: undefined reference to 'cv::dilate(cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, cv::Point_<int>, int, int, cv::Scalar_<double> const&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:116: error: undefined reference to 'cv::erode(cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, cv::Point_<int>, int, int, cv::Scalar_<double> const&)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:335: error: undefined reference to 'cv::Mat::copyTo(cv::_OutputArray const&) const'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:149: error: undefined reference to 'cv::floodFill(cv::_OutputArray const&, cv::_OutputArray const&, cv::Point_<int>, cv::Scalar_<double>, cv::Rect_<int>*, cv::Scalar_<double>, cv::Scalar_<double>, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/core.hpp:2161: error: undefined reference to 'cv::noArray()'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:1478: error: undefined reference to 'cv::subtract(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:165: error: undefined reference to 'cv::add(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:165: error: undefined reference to 'vtable for cv::_InputArray'
+D:/androidndk64/android-ndk-r10/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:20: error: undefined reference to 'cv::medianBlur(cv::_InputArray const&, cv::_OutputArray const&, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:28: error: undefined reference to 'cv::Laplacian(cv::_InputArray const&, cv::_OutputArray const&, int, int, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:33: error: undefined reference to 'cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:41: error: undefined reference to 'cv::Scharr(cv::_InputArray const&, cv::_OutputArray const&, int, int, int, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:42: error: undefined reference to 'cv::Scharr(cv::_InputArray const&, cv::_OutputArray const&, int, int, int, double, double, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/core.hpp:2161: error: undefined reference to 'cv::noArray()'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:1439: error: undefined reference to 'cv::add(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:45: error: undefined reference to 'cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:47: error: undefined reference to 'cv::medianBlur(cv::_InputArray const&, cv::_OutputArray const&, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:63: error: undefined reference to 'cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:74: error: undefined reference to 'cv::bilateralFilter(cv::_InputArray const&, cv::_OutputArray const&, int, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:75: error: undefined reference to 'cv::bilateralFilter(cv::_InputArray const&, cv::_OutputArray const&, int, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:86: error: undefined reference to 'cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:88: error: undefined reference to 'cv::_InputArray::_InputArray(double const&)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/core.hpp:1800: error: undefined reference to 'cv::noArray()'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:88: error: undefined reference to 'cv::Mat::setTo(cv::_InputArray const&, cv::_InputArray const&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:90: error: undefined reference to 'cv::Mat::copyTo(cv::_OutputArray const&, cv::_InputArray const&) const'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:171: error: undefined reference to 'cv::Mat::zeros(cv::Size_<int>, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:188: error: undefined reference to 'cv::ellipse(cv::Mat&, cv::Point_<int>, cv::Size_<int>, double, double, double, cv::Scalar_<double> const&, int, int, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:200: error: undefined reference to 'cv::ellipse(cv::Mat&, cv::Point_<int>, cv::Size_<int>, double, double, double, cv::Scalar_<double> const&, int, int, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:202: error: undefined reference to 'cv::ellipse(cv::Mat&, cv::Point_<int>, cv::Size_<int>, double, double, double, cv::Scalar_<double> const&, int, int, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:204: error: undefined reference to 'cv::ellipse(cv::Mat&, cv::Point_<int>, cv::Size_<int>, double, double, double, cv::Scalar_<double> const&, int, int, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:218: error: undefined reference to 'cv::putText(cv::Mat&, std::string const&, cv::Point_<int>, int, double, cv::Scalar_<double>, int, int, bool)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:221: error: undefined reference to 'cv::addWeighted(cv::_InputArray const&, double, cv::_InputArray const&, double, double, cv::_OutputArray const&, int)'
+collect2.exe: error: ld returned 1 exit status
+make.exe: *** [obj/local/armeabi-v7a/libjin_part.so] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:353: error: undefined reference to 'cv::Mat::create(int, int const*, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:367: error: undefined reference to 'cv::Mat::deallocate()'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:278: error: undefined reference to 'cv::fastFree(void*)'
+jni/jin_part.cpp:28: error: undefined reference to 'cv::_InputArray::_InputArray(cv::Mat const&)'
+jni/jin_part.cpp:28: error: undefined reference to 'cv::_OutputArray::_OutputArray(cv::Mat&)'
+jni/jin_part.cpp:28: error: undefined reference to 'cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+jni/jin_part.cpp:45: error: undefined reference to 'cv::_InputArray::_InputArray(cv::Mat const&)'
+jni/jin_part.cpp:45: error: undefined reference to 'cv::_OutputArray::_OutputArray(cv::Mat&)'
+jni/jin_part.cpp:45: error: undefined reference to 'cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:298: error: undefined reference to 'cv::Mat::copySize(cv::Mat const&)'
+jni/jin_part.cpp:52: error: undefined reference to 'cv::_InputArray::_InputArray(cv::Mat const&)'
+jni/jin_part.cpp:52: error: undefined reference to 'cv::_OutputArray::_OutputArray(cv::Mat&)'
+jni/jin_part.cpp:52: error: undefined reference to 'cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:353: error: undefined reference to 'cv::Mat::create(int, int const*, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:125: error: undefined reference to 'cv::Mat::copySize(cv::Mat const&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:97: error: undefined reference to 'cv::_InputArray::_InputArray(cv::Mat const&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:97: error: undefined reference to 'cv::_OutputArray::_OutputArray(cv::Mat&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:97: error: undefined reference to 'cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:104: error: undefined reference to 'cv::Mat::zeros(int, int, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:380: error: undefined reference to 'cv::Mat::Mat(cv::Mat const&, cv::Rect_<int> const&)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:298: error: undefined reference to 'cv::Mat::copySize(cv::Mat const&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:106: error: undefined reference to 'cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:108: error: undefined reference to 'cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:113: error: undefined reference to 'cv::dilate(cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, cv::Point_<int>, int, int, cv::Scalar_<double> const&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:116: error: undefined reference to 'cv::erode(cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, cv::Point_<int>, int, int, cv::Scalar_<double> const&)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:335: error: undefined reference to 'cv::Mat::copyTo(cv::_OutputArray const&) const'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:149: error: undefined reference to 'cv::floodFill(cv::_OutputArray const&, cv::_OutputArray const&, cv::Point_<int>, cv::Scalar_<double>, cv::Rect_<int>*, cv::Scalar_<double>, cv::Scalar_<double>, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/core.hpp:2161: error: undefined reference to 'cv::noArray()'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:1478: error: undefined reference to 'cv::subtract(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:165: error: undefined reference to 'cv::add(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:165: error: undefined reference to 'vtable for cv::_InputArray'
+D:/androidndk64/android-ndk-r10/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:20: error: undefined reference to 'cv::medianBlur(cv::_InputArray const&, cv::_OutputArray const&, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:28: error: undefined reference to 'cv::Laplacian(cv::_InputArray const&, cv::_OutputArray const&, int, int, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:33: error: undefined reference to 'cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:41: error: undefined reference to 'cv::Scharr(cv::_InputArray const&, cv::_OutputArray const&, int, int, int, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:42: error: undefined reference to 'cv::Scharr(cv::_InputArray const&, cv::_OutputArray const&, int, int, int, double, double, int)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/core.hpp:2161: error: undefined reference to 'cv::noArray()'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/mat.hpp:1439: error: undefined reference to 'cv::add(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:45: error: undefined reference to 'cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:47: error: undefined reference to 'cv::medianBlur(cv::_InputArray const&, cv::_OutputArray const&, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:63: error: undefined reference to 'cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:74: error: undefined reference to 'cv::bilateralFilter(cv::_InputArray const&, cv::_OutputArray const&, int, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:75: error: undefined reference to 'cv::bilateralFilter(cv::_InputArray const&, cv::_OutputArray const&, int, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:86: error: undefined reference to 'cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:88: error: undefined reference to 'cv::_InputArray::_InputArray(double const&)'
+D:\OpenCV-android-sdk\sdk\native\jni\include/opencv2/core/core.hpp:1800: error: undefined reference to 'cv::noArray()'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:88: error: undefined reference to 'cv::Mat::setTo(cv::_InputArray const&, cv::_InputArray const&)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:90: error: undefined reference to 'cv::Mat::copyTo(cv::_OutputArray const&, cv::_InputArray const&) const'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:171: error: undefined reference to 'cv::Mat::zeros(cv::Size_<int>, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:188: error: undefined reference to 'cv::ellipse(cv::Mat&, cv::Point_<int>, cv::Size_<int>, double, double, double, cv::Scalar_<double> const&, int, int, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:200: error: undefined reference to 'cv::ellipse(cv::Mat&, cv::Point_<int>, cv::Size_<int>, double, double, double, cv::Scalar_<double> const&, int, int, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:202: error: undefined reference to 'cv::ellipse(cv::Mat&, cv::Point_<int>, cv::Size_<int>, double, double, double, cv::Scalar_<double> const&, int, int, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:204: error: undefined reference to 'cv::ellipse(cv::Mat&, cv::Point_<int>, cv::Size_<int>, double, double, double, cv::Scalar_<double> const&, int, int, int)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:218: error: undefined reference to 'cv::putText(cv::Mat&, std::string const&, cv::Point_<int>, int, double, cv::Scalar_<double>, int, int, bool)'
+jni/../../MyCartoonifier_Desktop/cartoons.cpp:221: error: undefined reference to 'cv::addWeighted(cv::_InputArray const&, double, cv::_InputArray const&, double, double, cv::_OutputArray const&, int)'
+collect2.exe: error: ld returned 1 exit status
+make.exe: *** [obj/local/armeabi-v7a/libjin_part.so] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi-v7a] Compile++ thumb: jin_part <= cartoons.cpp
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi-v7a] Compile++ thumb: jin_part <= cartoons.cpp
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Compile++ thumb: jin_part <= jin_part.cpp
+[armeabi-v7a] SharedLibrary  : libjin_part.so
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MyCartoonifier ****
+
+D:\androidndk64\android-ndk-r10\ndk-build.cmd all 
+[armeabi-v7a] Install        : libjin_part.so => libs/armeabi-v7a/libjin_part.so
+
+**** Build Finished ****
