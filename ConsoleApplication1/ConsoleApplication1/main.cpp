@@ -19,6 +19,8 @@ using namespace cv;
 bool g_sketchMode = false;
 bool g_alienMode= true;
 bool g_evilMode = false;
+bool g_artMode = false;
+bool g_blurMode = false;
 
 
 void main(int argc, char *argv[])
@@ -57,7 +59,7 @@ void main(int argc, char *argv[])
 		//定义一个新矩阵
 		cv::Mat displayedFrame = Mat(cameraFrame.size(), CV_8UC3);
 
-		cartoonifyImage(cameraFrame,displayedFrame,g_sketchMode,g_evilMode,g_alienMode);
+		cartoonifyImage(cameraFrame,displayedFrame,g_sketchMode,g_evilMode,g_alienMode,g_artMode,g_blurMode);
 
 		if(g_alienMode)
 		{

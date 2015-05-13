@@ -1,7 +1,30 @@
 #include "cartoons.h"
 
-void cartoonifyImage(Mat srcColor, Mat dst,bool sketchMode, bool alienMode , bool  evilMode)
+void cartoonifyImage(Mat srcColor, Mat dst,bool sketchMode, bool alienMode , bool  evilMode,bool g_artMode,bool g_blurMode)
 {
+	if(g_artMode)
+	{
+		Mat grad_x, grad_y;
+		Mat abs_grad_x, abs_grad_y;
+
+		//载入原始图  
+		Mat src = srcColor.clone();  
+		//求 X方向梯度
+		Sobel( src, grad_x, CV_16S, 1, 0, 3, 1, 1, BORDER_DEFAULT );
+		convertScaleAbs( grad_x, abs_grad_x );
+		//求Y方向梯度
+		Sobel( src, grad_y, CV_16S, 0, 1, 3, 1, 1, BORDER_DEFAULT );
+		convertScaleAbs( grad_y, abs_grad_y );
+		//合并梯度(近似)
+		addWeighted( abs_grad_x, 0.5, abs_grad_y, 0.5, 0, dst );
+
+		return;
+	}
+	if(g_blurMode)
+	{
+		GaussianBlur(srcColor, dst, Size( 7, 7 ), 0, 0 );   
+		return;
+	}
 	Mat gray;
 	Mat edges;
 	Mat mask;
@@ -31,6 +54,8 @@ void cartoonifyImage(Mat srcColor, Mat dst,bool sketchMode, bool alienMode , boo
 		//如果threshold函数的第一个参数 src(x,y)>threshold，dst(x,y) = 0 ; 否则dst(x,y) = src(x,y).
 		const int EDGES_THRESHOLD = 80;
 		threshold(edges,mask,EDGES_THRESHOLD,255,THRESH_BINARY_INV);
+
+		removePepperNoises(mask);
 	}
 	else
 	{
@@ -215,8 +240,66 @@ void drawFaceStickFigureOut(Mat dst)
 	int fontFace = FONT_HERSHEY_COMPLEX;
     float fontScale = 1.0f;
     int fontThickness = 2;
-    putText(faceOutline, "Put your face here", Point(sw * 23/100, sh * 10/100), fontFace, fontScale, color, fontThickness, CV_AA);
+ //   putText(faceOutline, "Put your face here", Point(sw * 23/100, sh * 10/100), fontFace, fontScale, color, fontThickness, CV_AA);
 
 	//将人脸轮廓添加到显示图层
 	addWeighted(dst, 1.0, faceOutline, 0.7, 0, dst, CV_8UC3);
+}
+
+void removePepperNoises(Mat &mask)
+{
+	// For simplicity, ignore the top & bottom row border.
+	for (int y=2; y<mask.rows-2; y++) {
+		// Get access to each of the 5 rows near this pixel.
+		uchar *pThis = mask.ptr(y);
+		uchar *pUp1 = mask.ptr(y-1);
+		uchar *pUp2 = mask.ptr(y-2);
+		uchar *pDown1 = mask.ptr(y+1);
+		uchar *pDown2 = mask.ptr(y+2);
+
+		// For simplicity, ignore the left & right row border.
+		pThis += 2;
+		pUp1 += 2;
+		pUp2 += 2;
+		pDown1 += 2;
+		pDown2 += 2;
+		for (int x=2; x<mask.cols-2; x++) {
+			uchar v = *pThis;   // Get the current pixel value (either 0 or 255).
+			// If the current pixel is black, but all the pixels on the 2-pixel-radius-border are white
+			// (ie: it is a small island of black pixels, surrounded by white), then delete that island.
+			if (v == 0) {
+				bool allAbove = *(pUp2 - 2) && *(pUp2 - 1) && *(pUp2) && *(pUp2 + 1) && *(pUp2 + 2);
+				bool allLeft = *(pUp1 - 2) && *(pThis - 2) && *(pDown1 - 2);
+				bool allBelow = *(pDown2 - 2) && *(pDown2 - 1) && *(pDown2) && *(pDown2 + 1) && *(pDown2 + 2);
+				bool allRight = *(pUp1 + 2) && *(pThis + 2) && *(pDown1 + 2);
+				bool surroundings = allAbove && allLeft && allBelow && allRight;
+				if (surroundings == true) {
+					// Fill the whole 5x5 block as white. Since we know the 5x5 borders
+					// are already white, just need to fill the 3x3 inner region.
+					*(pUp1 - 1) = 255;
+					*(pUp1 + 0) = 255;
+					*(pUp1 + 1) = 255;
+					*(pThis - 1) = 255;
+					*(pThis + 0) = 255;
+					*(pThis + 1) = 255;
+					*(pDown1 - 1) = 255;
+					*(pDown1 + 0) = 255;
+					*(pDown1 + 1) = 255;
+				}
+				// Since we just covered the whole 5x5 block with white, we know the next 2 pixels
+				// won't be black, so skip the next 2 pixels on the right.
+				pThis += 2;
+				pUp1 += 2;
+				pUp2 += 2;
+				pDown1 += 2;
+				pDown2 += 2;
+			}
+			// Move to the next pixel.
+			pThis++;
+			pUp1++;
+			pUp2++;
+			pDown1++;
+			pDown2++;
+		}
+	}
 }

@@ -1,0 +1,45 @@
+package com.Cartoonifier;
+
+import android.app.Activity;
+
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+
+import android.widget.ImageView;
+
+
+public class MainActivity extends Activity {
+
+	private ImageView mTouchIn;  
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        
+        mTouchIn = (ImageView) findViewById(R.id.touchIn); 
+        
+        
+    //    Animation alphaAnimation = AnimationUtils.loadAnimation(this, R.anim.push_in); 
+   //     alphaAnimation.setRepeatCount(10);
+  //      mLoading.startAnimation(alphaAnimation); 
+   /*     AlphaAnimation animation = new AlphaAnimation(0,1); 
+        animation.setDuration(2000);
+        mLoading.setAnimation(animation); 
+        animation.startNow(); 
+        animation.reset();*/
+        
+      //иак╦  
+        AlphaAnimation alphaAnimation1 = new AlphaAnimation(0.1f, 1.0f);  
+        alphaAnimation1.setDuration(3000);  
+        alphaAnimation1.setRepeatCount(Animation.INFINITE);  
+        alphaAnimation1.setRepeatMode(Animation.REVERSE);  
+        mTouchIn.setAnimation(alphaAnimation1);  
+        alphaAnimation1.start(); 
+        
+    }
+}

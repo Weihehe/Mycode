@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="camera_mode">
+        <item>正常相机</item>
+        <item>卡通</item>
+        <item>素描</item>
+        <item>怪物</item>
+        <item>外星人</item>
+    </string-array>
+</resources>

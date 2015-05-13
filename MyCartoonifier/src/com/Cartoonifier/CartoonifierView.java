@@ -10,6 +10,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.MediaStore.Images;
 import android.text.format.DateFormat;
+import android.util.AttributeSet;
 import android.util.Log;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -41,9 +42,12 @@ class CartoonifierView extends CartoonifierViewBase{
 	//冻结的时间
 	private static final int FREEZE_OUTPUT_MSECS = 3000;
 	private int[] mRGBA;
+	private boolean m_normalMode = true;
 	private boolean m_sketchMode = false;
-	private boolean m_alienMode = true;
+	private boolean m_alienMode = false;
 	private boolean m_evilMode = false;
+	private boolean m_artMode = false;
+	private boolean m_blurMode = false;
 	private boolean m_drawFace = false;
 	//通知ID，可以在图片保存后通知我们消息
 	private int mNotificationID = 0;
@@ -53,6 +57,9 @@ class CartoonifierView extends CartoonifierViewBase{
 	
 	public CartoonifierView(Context context) {
         super(context);
+    }
+	public CartoonifierView(Context context, AttributeSet attrs){
+        super(context,attrs);
     }
 	//下一帧是否被存储
 	protected void nextFrameShouldBeSaved(Context baseContext) {
@@ -82,8 +89,8 @@ class CartoonifierView extends CartoonifierViewBase{
 		{
 			if(m_alienMode)
 				m_drawFace = true;
-			if (m_sketchMode||m_alienMode) {
-                CartoonifyImage(getFrameWidth(), getFrameHeight(), data, rgba, m_sketchMode, m_alienMode, m_evilMode,m_drawFace);
+			if (m_sketchMode||m_alienMode||m_artMode) {
+                CartoonifyImage(getFrameWidth(), getFrameHeight(), data, rgba, m_sketchMode, m_alienMode, m_evilMode,m_artMode,m_blurMode,m_drawFace);
             }
 			else
 				//将数据转化为rgba展示预览图像。不做处理
@@ -103,7 +110,10 @@ class CartoonifierView extends CartoonifierViewBase{
 			
 			
 			//卡通图像的处理函数
-			CartoonifyImage(getFrameWidth(), getFrameHeight(), data, rgba, m_sketchMode, m_alienMode, m_evilMode,m_drawFace);
+	         if(!m_normalMode)
+	        	 CartoonifyImage(getFrameWidth(), getFrameHeight(), data, rgba, m_sketchMode, m_alienMode, m_evilMode,m_artMode,m_blurMode,m_drawFace);
+	         else
+	        	 ShowPreview(getFrameWidth(), getFrameHeight(), data, rgba); 
 		}
 		
 		Bitmap bmp = mBitmap;
@@ -120,7 +130,7 @@ class CartoonifierView extends CartoonifierViewBase{
 	
 	//C++ native 函数声明
 	public native void ShowPreview(int width, int height, byte[] yuv, int[] rgba);
-    public native void CartoonifyImage(int width, int height, byte[] yuv, int[] rgba, boolean sketchMode, boolean alienMode, boolean evilMode,boolean drawFace);
+    public native void CartoonifyImage(int width, int height, byte[] yuv, int[] rgba, boolean sketchMode, boolean alienMode, boolean evilMode,boolean artMode,boolean blurMode,boolean drawFace);
     
     //加在对象
     static {
@@ -156,15 +166,14 @@ class CartoonifierView extends CartoonifierViewBase{
 			mgr.cancel(mNotificationID);
 		mNotificationID ++;
 		
-		Notification notification = new Notification(R.drawable.icon,"Saving to gallery(image"+mNotificationID+")..",System.currentTimeMillis());
+		Notification notification = new Notification(R.drawable.icon,"图像被保存到相册中..",System.currentTimeMillis());
 		
 		Intent intent = new Intent(context,CartoonifierView.class);
 		//如果用户点击就关闭它
 		notification.flags |= Notification.FLAG_AUTO_CANCEL;
 		//延迟执行的intent
 		PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
-		
-		notification.setLatestEventInfo(context, "Cartoonifier saved " + mNotificationID + " images to Gallery", "Saved as '" + filename + "'", pendingIntent);
+		notification.setLatestEventInfo(context,  context.getString(R.string.app_name)+":保存图像到相册中", "图像名称为'" + filename + "'", pendingIntent);
         mgr.notify(mNotificationID, notification);
 	}
 	
@@ -200,7 +209,67 @@ class CartoonifierView extends CartoonifierViewBase{
             e.printStackTrace();
         }
     }
-	
-	
+	protected void toggleNormalMode() {
+		m_normalMode = true;
+        m_sketchMode = false;
+        m_alienMode = false;
+        m_evilMode = false;
+        m_artMode = false;
+        m_blurMode = false;
+        m_drawFace = false;
+    }
+	protected void toggleCartoonMode() {
+		m_normalMode = false;
+        m_sketchMode = false;
+        m_alienMode = false;
+        m_evilMode = false;
+        m_artMode = false;
+        m_blurMode = false;
+        m_drawFace = false;
+    }
+	protected void toggleSketchMode() {
+		m_normalMode = false;
+		m_sketchMode = true;
+        m_alienMode = false;
+        m_evilMode = false;
+        m_artMode = false;
+        m_blurMode = false;
+        m_drawFace = false;
+    }
+    protected void toggleAlienMode() {
+    	m_normalMode = false;
+    	m_sketchMode = false;
+        m_alienMode = true;
+        m_evilMode = false;
+        m_artMode = false;
+        m_blurMode = false;
+    }
+    protected void toggleEvilMode() {
+    	m_normalMode = false;
+    	m_sketchMode = false;
+        m_alienMode = false;
+        m_evilMode = true;
+        m_artMode = false;
+        m_blurMode = false;
+        m_drawFace = false;
+    }
+    protected void toggleArtMode() {
+    	m_normalMode = false;
+        m_sketchMode = false;
+        m_alienMode = false;
+        m_evilMode = false;
+        m_artMode = true;
+        m_blurMode = false;
+        m_drawFace = false;
+    }
+    protected void toggleBlurMode() {
+    	m_normalMode = false;
+        m_sketchMode = false;
+        m_alienMode = false;
+        m_evilMode = false;
+        m_artMode = false;
+        m_blurMode = true;
+        m_drawFace = false;
+    }
 	
 }

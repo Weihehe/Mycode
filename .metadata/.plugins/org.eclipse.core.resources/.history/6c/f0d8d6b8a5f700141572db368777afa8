@@ -1,0 +1,27 @@
+package com.Cartoonifier;
+
+import android.app.Activity;
+import android.graphics.drawable.TransitionDrawable;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.animation.AnimationUtils;
+import android.widget.ViewFlipper;
+
+public class MainActivity extends Activity {
+
+	private ImageView ivLamp;  
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+   /*     ViewFlipper viewFilpper = (ViewFlipper) findViewById(R.id.flipper); 
+        viewFilpper.setInAnimation(AnimationUtils.loadAnimation(this,R.anim.push_in));  
+        viewFilpper.setOutAnimation(AnimationUtils.loadAnimation(this, R.anim.push_out));  
+        viewFilpper.startFlipping();  */
+        
+        TransitionDrawable drawable=(TransitionDrawable)ivLamp.getDrawable();  
+        //从第一个图像切换到第2个图像。其中使用1秒(1000毫秒)时间完成淡入淡出效果  
+        drawable.startTransition(1000); 
+    }
+}
